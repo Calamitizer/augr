@@ -1,0 +1,48 @@
+@import 'sass-material-colors';
+
+$hue-primary: 'light-blue';
+$hue-secondary: 'deep-purple';
+$hue-accent: 'deep-orange';
+
+@function material-primary($shade) {
+  @return material-color($hue-primary, $shade);
+}
+
+@function material-secondary($shade) {
+  @return material-color($hue-secondary, $shade);
+}
+
+@function material-accent($shade) {
+  @return material-color($hue-accent, $shade);
+}
+
+$color-primary-bg: material-primary('50');
+$color-primary-light-2: material-primary('100');
+$color-primary-light: material-primary('200');
+$color-primary: material-primary('300');
+$color-primary-dark: material-primary('400');
+$color-primary-dark-2: material-primary('500');
+
+$color-secondary-bg: material-secondary('100');
+$color-secondary-light-2: material-secondary('300');
+$color-secondary-light: material-secondary('400');
+$color-secondary: material-secondary('500');
+$color-secondary-dark: material-secondary('700');
+$color-secondary-dark-2: material-secondary('800');
+
+$color-accent-bg: material-accent('100');
+$color-accent-light-2: material-accent('300');
+$color-accent-light: material-accent('400');
+$color-accent: material-accent('500');
+$color-accent-dark: material-accent('700');
+$color-accent-dark-2: material-accent('800');
+
+$color-bg: lighten($color-primary-bg, 30%);
+$color-shadow: rgba(#2b2b2b, 0.3);
+
+$color-text-header: #2b2b2b;
+$color-text-body: #2b2b2b;
+
+$color-link: $color-secondary-light;
+$color-link-hover: $color-secondary-dark;
+$color-link-shadow: rgba($color-accent-dark-2, 0.25);

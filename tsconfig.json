@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "outDir": "./client/www",
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "baseUrl": "client/src",
+    "paths": {
+      "augr/*": ["*"]
+    }
+  },
+  "include": ["./client/src/**/*"]
+}
